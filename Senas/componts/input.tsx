@@ -1,7 +1,11 @@
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 
+type InputProps = {
+    nome: string;
+    texto: string
+}
 
-function Input({nome, texto}){
+function Input({nome, texto}: InputProps){
     return(
         <>
             <Text style={styles.Texto}>{nome}</Text>

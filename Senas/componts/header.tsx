@@ -1,6 +1,9 @@
 import { View, StyleSheet, Image, Text } from 'react-native';
-
-function Header({ cor, texto }) {
+type HeaderProps = {
+  cor: string;
+  texto: string;
+}
+function Header({ cor, texto }:HeaderProps) {
     const LogoSenai =require('../assets/senai.png')
     return (
         <View style={[styles.container, { backgroundColor: cor }]}>

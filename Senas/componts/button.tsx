@@ -1,6 +1,9 @@
 import { View, StyleSheet, TouchableOpacity, Text } from "react-native"
 
-function Button({nome}){
+type ButtonProps ={
+  nome: String;
+}
+function Button({nome}:ButtonProps){
     return(
         <View style={styles.container}>
             <TouchableOpacity style={styles.button}>
