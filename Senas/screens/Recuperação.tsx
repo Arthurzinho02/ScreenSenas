@@ -10,7 +10,7 @@ export default function App() {
       <Header cor='#011E83' texto='Recuperação de senha' />
       <View style={styles.container}>
         <Text style={styles.Texto}>Insira seu e-mail para recuperar a senha!</Text>
-        <Input nome='E-mail' texto='Insira seu e-mail'/>
+        <Input label='E-mail' placeholder='Insira seu e-mail'/>
         <Button nome='Recuperar'/>
       </View>
     </View>

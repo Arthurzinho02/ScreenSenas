@@ -1,15 +1,14 @@
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, TextInput, TextInputProps } from 'react-native';
 
-type InputProps = {
-    nome: string;
-    texto: string
+interface InputProps extends TextInputProps{
+    label: string
 }
 
-function Input({nome, texto}: InputProps){
+function Input({label, ...props}: InputProps){
     return(
         <>
-            <Text style={styles.Texto}>{nome}</Text>
-            <TextInput style={styles.InputTex} placeholder={texto}/>
+            <Text style={styles.Texto}>{label}</Text>
+            <TextInput {...props} style={styles.InputTex} />
         </>
     )
 }

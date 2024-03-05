@@ -10,8 +10,8 @@ export default function App() {
       <Header cor='#000000' texto='Login' />
       <View style={styles.container}>
         <Text style={styles.Texto}>Faça Login para Acessar o Sistema!</Text>
-        <Input nome='E-mail' texto='Insira seu e-mail:'/>
-        <Input nome='Senha' texto='Insira sua senha:'/>
+        <Input label='E-mail' placeholder='Insira seu e-mail:'/>
+        <Input secureTextEntry label='Senha' placeholder='Insira sua senha:'/>
         <Button nome='Logar'/>
         <View style={styles.Link}>
           <TouchableOpacity>

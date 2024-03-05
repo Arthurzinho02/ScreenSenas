@@ -9,12 +9,12 @@ export default function App() {
     <View>
       <Header cor='#FF0000' texto='Cadastre-se' />
       <View style={styles.container}>
-        <Input nome='Nome' texto='Insira seu nome:'/>
-        <Input nome='Sobrenome' texto='Insira seu sobrenome:'/>
-        <Input nome='E-mail' texto='Insira seu e-mail:'/>
-        <Input nome='Telefone' texto='Insira seu telefone:'/>
-        <Input nome='Senha' texto='Insira sua senha:'/>
-        <Input nome='Confirmar senha' texto='Insira sua senha:'/>
+        <Input label='Nome' placeholder='Insira seu nome:'/>
+        <Input label='Sobrenome' placeholder='Insira seu sobrenome:'/>
+        <Input label='E-mail' placeholder='Insira seu e-mail:'/>
+        <Input label='Telefone' placeholder='Insira seu telefone:'/>
+        <Input secureTextEntry label='Senha' placeholder='Insira sua senha:'/>
+        <Input secureTextEntry label='Confirmar senha' placeholder='Insira sua senha:'/>
         <Button nome='Cadastrar-se'/>
       </View>
     </View>
