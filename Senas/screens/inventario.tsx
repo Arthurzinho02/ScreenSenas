@@ -1,4 +1,4 @@
-import { ScrollView, View, StyleSheet } from 'react-native';
+import { ScrollView, View, StyleSheet, TouchableOpacity } from 'react-native';
 import Footer from '../componts/footer';
 import Nav from '../componts/nav';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -7,7 +7,7 @@ import { FontAwesome6 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
 
-export default function App() {
+export default function Inventário() {
   return (
     <>
     <View style={styles.container}>
@@ -23,7 +23,9 @@ export default function App() {
         <Itens codigo='956389' texto='CADEIRA  SENAI' />
         <Itens codigo='956389' texto='CADEIRA  SENAI' />
       </ScrollView>
-      <AntDesign style={styles.Icon} name="pluscircle" size={60} color="#FF0000" />
+      <TouchableOpacity>
+        <AntDesign style={styles.Icon} name="pluscircle" size={60} color="#FF0000" />
+      </TouchableOpacity>
       <Footer cor='#FF0000' ionicons={<FontAwesome6 name="camera-rotate" size={25} color="#FFFFFF" />} ionicons1={<FontAwesome5 name="list-ol" size={20} color="#FFFFFF" />}/>
     </View>
     </>
@@ -36,9 +38,8 @@ const styles = StyleSheet.create({
   },
   Icon:{
     position: 'absolute',
-    bottom: 70,
+    bottom: 20,
     right:20,
     zIndex: 1
   }
 })
-

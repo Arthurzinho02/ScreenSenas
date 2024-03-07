@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   Tex:{
     color: '#FFFFFF',
-    fontSize:20,
+    fontSize:14,
   },
 });
 

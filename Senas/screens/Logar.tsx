@@ -4,7 +4,7 @@ import Input from '../componts/input';
 import Button from '../componts/button';
 
 
-export default function App() {
+export default function Logar() {
   return (
     <View>
       <Header cor='#000000' texto='Login' />

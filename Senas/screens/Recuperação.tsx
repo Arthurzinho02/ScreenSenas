@@ -4,7 +4,7 @@ import Input from '../componts/input';
 import Button from '../componts/button';
 
 
-export default function App() {
+export default function Recuperação() {
   return (
     <View>
       <Header cor='#011E83' texto='Recuperação de senha' />

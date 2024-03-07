@@ -4,7 +4,7 @@ import Input from '../componts/input';
 import Button from '../componts/button';
 
 
-export default function App() {
+export default function Cadastrarse() {
   return (
     <View>
       <Header cor='#FF0000' texto='Cadastre-se' />
@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
   container:{
     marginLeft:20,
     marginRight:20,
-    gap:7
+    gap:7,
+    marginTop: 15
   },
 
 });
