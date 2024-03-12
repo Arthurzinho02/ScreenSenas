@@ -1,4 +1,4 @@
-import { ScrollView, View, StyleSheet } from 'react-native';
+import { ScrollView, View, StyleSheet, StatusBar } from 'react-native';
 import Footer from '../componts/footer';
 import Nav from '../componts/nav';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -10,6 +10,7 @@ import InputI from '../componts/inputitens';
 export default function Cadastro() {
   return (
     <>
+    <StatusBar backgroundColor='#FF0000'/>
     <View style={styles.container}>
     <Nav cor='#FF0000' corText='#FFFFFF' text='Cadastro de itens' ionicons={<AntDesign name="arrowleft" size={30} color="#FFFFFF" />} ionicons1={<AntDesign name="pluscircleo" size={30} color="#FFFFFF" />}/>
       <ScrollView style={styles.scrool}>

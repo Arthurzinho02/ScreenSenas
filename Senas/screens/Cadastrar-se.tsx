@@ -1,12 +1,14 @@
 import Header from '../componts/header';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, StatusBar  } from 'react-native';
 import Input from '../componts/input';
 import Button from '../componts/button';
 
 
 export default function Cadastrarse() {
   return (
+    
     <View>
+      <StatusBar backgroundColor='#FF0000'/>
       <Header cor='#FF0000' texto='Cadastre-se' />
       <View style={styles.container}>
         <Input label='Nome' placeholder='Insira seu nome:'/>

@@ -1,4 +1,4 @@
-import { ScrollView, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { ScrollView, View, StyleSheet, StatusBar } from 'react-native';
 import Footer from '../componts/footer';
 import Nav from '../componts/nav';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -11,11 +11,6 @@ export default function Scanner() {
         container:{
           flex: 1
         },
-        info:{
-          margin:20,
-          marginTop: 40,
-          gap: 20
-        },
         Cinza:{
           height: 525,
           backgroundColor: '#FBFBFB',
@@ -26,6 +21,7 @@ export default function Scanner() {
       })
   return (
     <>
+    <StatusBar backgroundColor='#FF0000'/>
     <View style={styles.container}>
     <Nav cor='#FF0000' corText='#FFFFFF' text='Scanner' ionicons={<AntDesign name="arrowleft"size={25} color="#FFFFFF" />} ionicons1={<FontAwesome6 name="arrow-rotate-right" size={25} color="#FFFFFF" />}/>
       <ScrollView>

@@ -12,7 +12,8 @@ import { StatusBar } from 'expo-status-bar';
 export default function Descrição() {
     const styles = StyleSheet.create({
         container:{
-          flex: 1
+          flex: 1,
+          marginTop:30
         },
         info:{
           margin:20,
@@ -32,8 +33,8 @@ export default function Descrição() {
       })
   return (
     <>
-    <View style={styles.container}>
     <StatusBar backgroundColor='#FF0000'/>
+    <View style={styles.container}>
     <Nav cor='#FF0000' corText='#FFFFFF' text='Descrição do item' ionicons={<AntDesign name="arrowleft"size={25} color="#FFFFFF" />} ionicons1={<FontAwesome6 name="arrow-rotate-right" size={25} color="#FFFFFF" />}/>
       <ScrollView>
         <View style={styles.Cinza}>
