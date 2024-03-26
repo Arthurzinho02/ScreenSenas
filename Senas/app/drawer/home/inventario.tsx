@@ -1,8 +1,8 @@
 import { ScrollView, View, StyleSheet, TouchableOpacity, StatusBar } from 'react-native';
-import Footer from '../componts/footer';
-import Nav from '../componts/nav';
+import Footer from '../../../componts/footer';
+import Nav from '../../../componts/nav';
 import { FontAwesome5 } from '@expo/vector-icons';
-import Itens from '../componts/itens';
+import Itens from '../../../componts/itens';
 import { FontAwesome6 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 

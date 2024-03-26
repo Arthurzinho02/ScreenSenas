@@ -17,7 +17,7 @@ export default function Cadastrarse() {
         <Input label='Telefone' placeholder='Insira seu telefone:'/>
         <Input secureTextEntry label='Senha' placeholder='Insira sua senha:'/>
         <Input secureTextEntry label='Confirmar senha' placeholder='Insira sua senha:'/>
-        <Button nome='Cadastrar-se'/>
+        <Button nome='Cadastrar-se' href="index"/>
       </View>
     </View>
   );

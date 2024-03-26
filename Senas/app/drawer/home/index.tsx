@@ -1,6 +1,6 @@
 import { ScrollView, View, StyleSheet, StatusBar } from 'react-native';
-import Footer from '../componts/footer';
-import Nav from '../componts/nav';
+import Footer from '../../../componts/footer';
+import Nav from '../../../componts/nav';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome6 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
