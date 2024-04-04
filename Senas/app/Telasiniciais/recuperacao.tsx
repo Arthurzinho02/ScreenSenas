@@ -1,7 +1,7 @@
-import Header from '../componts/header';
+import Header from '@comp/header';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
-import Input from '../componts/input';
-import Button from '../componts/button';
+import Input from '@comp/input';
+import Button from '@comp/button';
 
 
 export default function Recuperação() {

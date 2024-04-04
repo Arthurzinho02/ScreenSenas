@@ -2,22 +2,22 @@ import { Stack } from "expo-router";
 
 export default function layout(){
     return(
-        <Stack screenOptions={{
-            headerTransparent: true,
-            headerTintColor: 'white',
-            headerTitle: "",
-            statusBarStyle: 'light',
-        }}>
+        <Stack>
             <Stack.Screen name="index" options={{
-            statusBarColor: '000000'
+            headerShown: false
         }} />
-            <Stack.Screen name="Cadastrar" options={{
-            statusBarColor: 'FF000'
+            <Stack.Screen name="Telasiniciais/Cadastrar" options={{
+            headerTransparent: true,
+            headerTitle: "",
+            headerTintColor: "#fff"
         }} />
-            <Stack.Screen name="recuperacao" options={{
-            statusBarColor: '011e83'
+            <Stack.Screen name="Telasiniciais/recuperacao" options={{
+            headerTransparent: true,
+            headerTitle: "",
+            headerTintColor: "#fff"
+
         }} />
-            <Stack.Screen name="drawer" options={{
+            <Stack.Screen name="tabnav" options={{
                 headerShown: false
             }}/>
         </Stack>

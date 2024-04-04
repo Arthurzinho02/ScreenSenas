@@ -29,7 +29,7 @@ function Loading() {
     <View style={styles.container}>
       <StatusBar backgroundColor='#FF0000'/>
       <View style={styles.background}>
-        <Image source={require('../assets/senai.png')} style={styles.logo} />
+        <Image source={require('@assets/senai.png')} style={styles.logo} />
         <ActivityIndicator size="large" color="#fff" style={styles.loader} />
       </View>
     </View>

@@ -1,18 +1,17 @@
 import { ScrollView, View, StyleSheet, StatusBar } from 'react-native';
-import Footer from '../componts/footer';
-import Nav from '../componts/nav';
+import Footer from '@comp/footer';
+import Nav from '@comp/nav';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome6 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
-import InputI from '../componts/inputitens';
+import InputI from '@comp/inputitens';
 
 
-export default function Editar() {
+export default function Cadastro() {
   return (
     <>
     <StatusBar backgroundColor='#FF0000'/>
     <View style={styles.container}>
-    <Nav cor='#FF0000' corText='#FFFFFF' text='Editar' ionicons={<AntDesign name="arrowleft" size={30} color="#FFFFFF" />} ionicons1={<AntDesign name="pluscircleo" size={30} color="#FFFFFF" />}/>
       <ScrollView style={styles.scrool}>
         <InputI label='Nº Inventário'/>
         <InputI label='Descrição'/>
@@ -20,7 +19,6 @@ export default function Editar() {
         <InputI label='Responsável'/>
         <InputI label='Data de registro'/>
       </ScrollView>
-      <Footer bw={1} bcolor='#F5F5F5' ionicons={<FontAwesome6 name="camera-rotate" size={25} color="#595959" />} ionicons1={<FontAwesome5 name="list-ol" size={20} color="#595959" />}/>
     </View>
     </>
   );
