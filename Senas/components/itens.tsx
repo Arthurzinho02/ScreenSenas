@@ -1,11 +1,14 @@
-import { View, StyleSheet, Text } from "react-native"
+import { Link } from "expo-router"
+import { StyleSheet, Text, TouchableOpacity } from "react-native"
 
 function Itens({...props}){
     return(
-        <View style={styles.container}>
-            <Text style={styles.numero}>{props.codigo}</Text>
-            <Text style={styles.Tex}>{props.texto}</Text>
-        </View>
+        <Link href={props.link} asChild>
+            <TouchableOpacity style={styles.container}>
+                <Text style={styles.numero}>{props.codigo}</Text>
+                <Text style={styles.Tex}>{props.texto}</Text>
+            </TouchableOpacity>
+        </Link>
     )
 }
 

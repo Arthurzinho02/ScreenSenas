@@ -1,6 +1,6 @@
 import { View, StyleSheet, Image, Text } from 'react-native';
 type HeaderProps = {
-  cor: string;
+  cor: string|undefined;
   texto: string;
 }
 function Header({ cor, texto }:HeaderProps) {

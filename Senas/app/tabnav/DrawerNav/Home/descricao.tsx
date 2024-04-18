@@ -7,7 +7,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Caracteristica from '@comp/caracteristica';
 import { AntDesign } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
-
+import { Link } from 'expo-router';
 
 export default function Descrição() {
     const styles = StyleSheet.create({
@@ -46,9 +46,11 @@ export default function Descrição() {
           </View>
         </View>
       </ScrollView>
-      <TouchableOpacity>
-        <MaterialCommunityIcons style={styles.Icon} name="pencil-circle"size={60} color="#FF0000" />
-      </TouchableOpacity>
+      <Link href={"tabnav/DrawerNav/Home/Editar"} asChild>
+        <TouchableOpacity>
+          <MaterialCommunityIcons style={styles.Icon} name="pencil-circle"size={60} color="#FF0000" />
+        </TouchableOpacity>
+      </Link>
     </View>
     </>
   );
