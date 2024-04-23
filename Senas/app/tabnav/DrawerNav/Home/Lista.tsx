@@ -1,27 +1,28 @@
 import { ScrollView, View, StyleSheet, TouchableOpacity, StatusBar } from 'react-native';
 
 import Itens from '@comp/itens';
-
+import useColor from '../../../../temas/Temas';
 import { AntDesign } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 
 
 export default function Inventário() {
+  const color = useColor()
   return (
     <>
     <StatusBar backgroundColor='#ffffff'/>
     <View style={styles.container}>
       <ScrollView>
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao"codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
-        <Itens link="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' />
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao"codigo='956389' texto='CADEIRA  SENAI'  cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
+        <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
       </ScrollView>
       <Link href={"tabnav/DrawerNav/Home/cadastro"} asChild>
         <TouchableOpacity>

@@ -3,7 +3,7 @@ type HeaderProps = {
   cor: string|undefined;
   texto: string;
 }
-function Header({ cor, texto }:HeaderProps) {
+export default function Header({ cor, texto }:HeaderProps) {
     const LogoSenai =require('../assets/senai.png')
     return (
         <View style={[styles.container, { backgroundColor: cor }]}>
@@ -30,8 +30,7 @@ const styles = StyleSheet.create({
   },
   Tex:{
     color: '#FFFFFF',
-    fontSize:14,
+    fontSize: 20,
   },
 });
 
-export default Header;

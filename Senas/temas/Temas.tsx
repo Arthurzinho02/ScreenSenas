@@ -1,7 +1,7 @@
 import { useColorScheme } from "react-native"
 
 
-interface Cores {
+export interface Cores {
     bgPrimary: string,
     bgSecundary: string,
     bgInfo?: string

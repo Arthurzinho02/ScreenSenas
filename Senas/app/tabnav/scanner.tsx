@@ -1,19 +1,17 @@
 import { ScrollView, View, StyleSheet, StatusBar } from 'react-native';
-import Footer from '@comp/footer';
-import Nav from '@comp/nav';
-import { FontAwesome5 } from '@expo/vector-icons';
-import { FontAwesome6 } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import useColor from '../../temas/Temas';
 
 export default function Scanner() {
+    const color = useColor()
     const styles = StyleSheet.create({
         container:{
+          backgroundColor: color.bgPrimary,
           flex: 1
         },
         Cinza:{
           height: 525,
-          backgroundColor: '#FBFBFB',
+          backgroundColor: color.nome === 'dark' ? color.bgPrimary : '#FBFBFB',
           alignItems: 'center',
           justifyContent: 'flex-end',
           paddingBottom: 20
@@ -21,7 +19,6 @@ export default function Scanner() {
       })
   return (
     <>
-    
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.Cinza}>

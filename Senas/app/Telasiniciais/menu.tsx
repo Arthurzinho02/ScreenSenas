@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, ActivityIndicator, Image, StatusBar } from 'react-native';
 
-function Loading() {
+export default function Loading() {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -36,4 +36,3 @@ function Loading() {
   );
 }
 
-export default Loading;

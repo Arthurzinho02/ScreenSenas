@@ -5,9 +5,10 @@ import Button from '@comp/button';
 import { Link } from 'expo-router';
 import useColor from '../../temas/Temas';
 
-const color = useColor()
+
 
 export default function Logar() {
+  const color = useColor()
   const styles = StyleSheet.create({
     container: {
       backgroundColor: color.bgPrimary,
@@ -16,6 +17,7 @@ export default function Logar() {
       gap: 10
     },
     Texto: {
+      color: color.textcolorPrimary,
       marginTop: 40,
       marginBottom: 30,
       fontSize: 16,
@@ -28,18 +30,18 @@ export default function Logar() {
       justifyContent: 'space-between',
     },
     TextLink: {
-      color: '#011E83'
+      color: color.nome === 'dark' ?  color.inputtextcolorPrimaryVariant : color.bgInfo
     },
   
   });
   return (
-    <View style={{backgroundColor: color.bgPrimary, height: 850}}>
+    <View style={{backgroundColor: color.bgPrimary, height: '100%'}}>
       <Header cor={color.nome === 'dark' ? color.bgPrimary : '#000000'} texto='Login' />
       <View style={styles.container}>
         <Text style={styles.Texto}>Faça Login para Acessar o Sistema!</Text>
-        <Input label='E-mail' placeholder='Insira seu e-mail:' />
-        <Input secureTextEntry label='Senha' placeholder='Insira sua senha:' />
-        <Button nome='Entrar' href="tabnav" />
+        <Input label='E-mail' placeholder='Insira seu e-mail:' cor={color} />
+        <Input secureTextEntry label='Senha' placeholder='Insira sua senha:' cor={color}/>
+        <Button nome='Entrar' href="tabnav" cor={color} />
         <View style={styles.Link}>
           <Link href="Telasiniciais/Cadastrar" asChild>
             <TouchableOpacity>

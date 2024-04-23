@@ -1,12 +1,14 @@
 import { StyleSheet, Text, TextInput, TextInputProps } from 'react-native';
 import { useState } from 'react';
+import { Cores } from '../temas/Temas';
 
 interface InputProps extends TextInputProps{
     label: string
+    cor: Cores
 }
 
 export default function Input({label, ...props}: InputProps){
-    const [hover, sethover] =useState('#F5F5F5')
+    const [hover, sethover] =useState(props.cor.inputbgPrimaryVariant)
     const styles = StyleSheet.create({
         container:{
             width:'100%',
@@ -15,6 +17,7 @@ export default function Input({label, ...props}: InputProps){
             
         },
         Texto:{
+            color: props.cor.inputtextcolorPrimaryVariant,
             fontSize:14,
         },
         InputTex:{
@@ -23,18 +26,17 @@ export default function Input({label, ...props}: InputProps){
             height: 44,
             fontSize:11,
             borderRadius: 5,
-            backgroundColor: '#F5F5F5',
-            padding:5
-            
+            backgroundColor: props.cor.inputbgPrimaryVariant,
+            padding:5,
         }
     })
     return(
         <>
             <Text style={styles.Texto}>{label}</Text>
-            <TextInput {...props} style={styles.InputTex} onFocus={()=>{
-                sethover('#F39200')
+            <TextInput {...props} style={styles.InputTex} placeholderTextColor={props.cor.inputtextcolorPrimaryVariant} onFocus={()=>{
+                sethover(props.cor.inputbgHover)
             }} onBlur={()=>{
-                sethover('#F5F5F5')
+                sethover(props.cor.inputbgPrimaryVariant)
             }}/>
         </>
     )
