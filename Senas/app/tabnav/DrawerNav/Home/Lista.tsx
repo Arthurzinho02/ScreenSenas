@@ -24,6 +24,7 @@ export default function Inventário() {
         <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
         <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>
       </ScrollView>
+      {/* Obs: O Botão funciona, contudo, existe um delay, sendo necessário apertar várias vezes para entrar */}
       <Link href={"tabnav/DrawerNav/Home/cadastro"} asChild>
         <TouchableOpacity>
           <AntDesign style={styles.Icon} name="pluscircle" size={60} color="#FF0000" />

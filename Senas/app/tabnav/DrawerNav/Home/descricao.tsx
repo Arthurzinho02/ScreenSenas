@@ -43,6 +43,7 @@ export default function Descrição() {
           </View>
         </View>
       </ScrollView>
+      {/* Obs: O botão funciona, entretanto, existe um delay, sendo necessário apertar várias vezes para entrar */}
       <Link href={"tabnav/DrawerNav/Home/Editar"} asChild>
         <TouchableOpacity>
           <MaterialCommunityIcons style={styles.Icon} name="pencil-circle"size={60} color="#FF0000" />

@@ -31,7 +31,7 @@ export default function layout(){
                     backgroundColor: color.bgSecundary,
                 },
                 tabBarIcon: ({color, size})=> (<MaterialIcons name="format-list-numbered" size={size} color={color} />),
-                tabBarInactiveTintColor: color.nome == 'dark' ? color.textcolorSecundary : color.inputtextcolorPrimaryVariant,
+                tabBarInactiveTintColor: "#FFFFFF",
             }}/>
         </Tabs>
     )
