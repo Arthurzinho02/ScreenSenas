@@ -10,7 +10,7 @@ export default function Inventário() {
   const color = useColor()
   return (
     <>
-    <StatusBar backgroundColor='#ffffff'/>
+    <StatusBar backgroundColor={color.bgPrimary}/>
     <View style={styles.container}>
       <ScrollView>
         <Itens href="tabnav/DrawerNav/Home/descricao" codigo='956389' texto='CADEIRA  SENAI' cor={color}/>

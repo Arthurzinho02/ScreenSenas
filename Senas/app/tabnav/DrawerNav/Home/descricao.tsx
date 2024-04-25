@@ -30,7 +30,7 @@ export default function Descrição() {
       })
   return (
     <>
-    <StatusBar backgroundColor='#FF0000'/>
+    <StatusBar backgroundColor={color.bgSecundary}/>
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.Cinza}>

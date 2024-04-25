@@ -18,7 +18,7 @@ export default function Cadastro() {
   })
   return (
     <>
-    <StatusBar backgroundColor='#FF0000'/>
+    <StatusBar backgroundColor={color.bgSecundary}/>
     <View style={styles.container}>
       <ScrollView style={styles.scrool}>
         <InputI label='Nº Inventário' cor={color}/>
