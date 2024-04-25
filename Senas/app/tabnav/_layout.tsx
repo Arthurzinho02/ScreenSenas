@@ -2,6 +2,7 @@ import { Tabs } from "expo-router";
 import { FontAwesome6 } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import useColor from "../../temas/Temas";
+import { TouchableOpacity } from "react-native";
 
 
 
@@ -21,7 +22,7 @@ export default function layout(){
                 tabBarStyle:{
                     backgroundColor: color.bgPrimary
                 },
-                headerRight: ()=>(<FontAwesome6 style={{marginRight:10}} name="arrow-rotate-right" size={24} color='white'  />),
+                headerRight: ()=>(<TouchableOpacity><FontAwesome6 style={{marginRight:10}} name="arrow-rotate-right" size={24} color='white'  /></TouchableOpacity>),
                  
             }}/>
             <Tabs.Screen name="DrawerNav" options={{

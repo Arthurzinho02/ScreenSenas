@@ -1,4 +1,4 @@
-import { ScrollView, View, StyleSheet, StatusBar } from 'react-native';
+import { ScrollView, View, StyleSheet } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import useColor from '../../temas/Temas';
 

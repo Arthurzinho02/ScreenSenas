@@ -1,6 +1,8 @@
 import { Stack } from "expo-router";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 import useColor from "../../../../temas/Temas";
+import { AntDesign } from '@expo/vector-icons';
+import { TouchableOpacity } from "react-native";
 
 export default function layout(){
     const color = useColor()
@@ -19,7 +21,15 @@ export default function layout(){
                 }
                 
             }}/>
-            <Stack.Screen name="Editar" />
+            <Stack.Screen name="cadastro" options={{
+                headerTintColor: color.inputtextcolorPrimaryVariant,
+                headerStyle: {
+                    backgroundColor: color.bgSecundary
+                },
+                headerTitleAlign: 'center',
+                headerTitle: 'Cadastro de itens',
+                headerRight: ()=>(<TouchableOpacity><AntDesign name="pluscircleo" size={24} color={color.inputtextcolorPrimaryVariant} /></TouchableOpacity>)
+            }} />
         </Stack>
     )
 }
