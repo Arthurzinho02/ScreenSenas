@@ -26,7 +26,7 @@ export default function Itens({codigo, texto,...props}:InputBtnProps){
         fontSize: 16,
         fontWeight: '600'
     },Tex:{
-        color: props.cor.textcolorSecundary,
+        color: props.cor.inputtextcolorPrimaryVariant,
         fontSize: 14,
         fontWeight: '400'
     },

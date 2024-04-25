@@ -22,13 +22,13 @@ export default function layout(){
                 
             }}/>
             <Stack.Screen name="cadastro" options={{
-                headerTintColor: color.inputtextcolorPrimaryVariant,
+                headerTintColor: "#FFFFFF",
                 headerStyle: {
                     backgroundColor: color.bgSecundary
                 },
                 headerTitleAlign: 'center',
                 headerTitle: 'Cadastro de itens',
-                headerRight: ()=>(<TouchableOpacity><AntDesign name="pluscircleo" size={24} color={color.inputtextcolorPrimaryVariant} /></TouchableOpacity>)
+                headerRight: ()=>(<TouchableOpacity><AntDesign name="pluscircleo" size={24} color='white' /></TouchableOpacity>)
             }} />
         </Stack>
     )
