@@ -1,14 +1,24 @@
 import { StyleSheet, Text, View } from "react-native"
+import { TextInputProps } from "react-native"
+import { Cores } from "../temas/Temas"
 
-export default function Caracteristica({...props}){
+
+interface DesProps extends TextInputProps{
+    titulo: string,
+    texto: string,
+    cor: Cores
+}
+
+export default function Caracteristica({...props}:DesProps){
     const styles = StyleSheet.create({
         titulo:{
+            color: props.cor.textcolorPrimary,
             fontWeight: '600',
             fontSize: 11,
             marginBottom: 10
         },Texto:{
+            color: props.cor.inputtextcolorPrimaryVariant,
             fontSize: 16,
-            color: '#595959',
             fontWeight: '400'
         }
     })

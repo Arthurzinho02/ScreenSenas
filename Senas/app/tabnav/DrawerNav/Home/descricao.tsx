@@ -1,19 +1,16 @@
 import { ScrollView, View, StyleSheet, TouchableOpacity } from 'react-native';
-import Footer from '@comp/footer';
-import Nav from '@comp/nav';
-import { FontAwesome5 } from '@expo/vector-icons';
-import { FontAwesome6 } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Caracteristica from '@comp/caracteristica';
-import { AntDesign } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 import { Link } from 'expo-router';
+import useColor from '../../../../temas/Temas';
 
 export default function Descrição() {
+    const color = useColor()
     const styles = StyleSheet.create({
         container:{
           flex: 1,
-          marginTop:30
+          backgroundColor: color.bgPrimary
         },
         info:{
           margin:20,
@@ -22,7 +19,7 @@ export default function Descrição() {
         },
         Cinza:{
           height: 525,
-          backgroundColor: '#FBFBFB'
+          backgroundColor: color.nome == 'dark' ? color.bgPrimary : "#FBFBFB"  
         },
         Icon:{
           position: 'absolute',
@@ -38,11 +35,11 @@ export default function Descrição() {
       <ScrollView>
         <View style={styles.Cinza}>
           <View style={styles.info}>
-            <Caracteristica titulo='Nº do Inventário:' texto='957689'/>
-            <Caracteristica titulo='Descrição:' texto='CADEIRA GIRATÓRIOA'/>
-            <Caracteristica titulo='Local:' texto='SALA C13'/>
-            <Caracteristica titulo='Responsável:' texto='CARLOS'/>
-            <Caracteristica titulo='Data de Registro:' texto='05/03/2024'/>
+            <Caracteristica titulo='Nº do Inventário:' texto='957689' cor={color}/>
+            <Caracteristica titulo='Descrição:' texto='CADEIRA GIRATÓRIOA' cor={color}/>
+            <Caracteristica titulo='Local:' texto='SALA C13' cor={color}/>
+            <Caracteristica titulo='Responsável:' texto='CARLOS' cor={color}/>
+            <Caracteristica titulo='Data de Registro:' texto='05/03/2024' cor={color}/>
           </View>
         </View>
       </ScrollView>
