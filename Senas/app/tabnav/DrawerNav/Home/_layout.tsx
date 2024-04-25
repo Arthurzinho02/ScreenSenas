@@ -40,6 +40,15 @@ export default function layout(){
                 headerTitle: 'Descrição do item',
                 headerRight: ()=>(<TouchableOpacity><FontAwesome6 name="arrow-rotate-right" size={24} color='white'/></TouchableOpacity>)
             }}/>
+            <Stack.Screen name="Editar" options={{
+                headerTintColor: "#FFFFFF",
+                headerStyle: {
+                    backgroundColor: color.bgSecundary
+                },
+                headerTitleAlign: 'center',
+                headerTitle: 'Editar',
+                headerRight: ()=>(<TouchableOpacity><AntDesign name="checkcircle" size={24} color="white" /></TouchableOpacity>)
+            }}/>
         </Stack>
     )
 }
